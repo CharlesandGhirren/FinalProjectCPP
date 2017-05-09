@@ -5,7 +5,7 @@ int hp = 20, mp = 20, ehp = 35;
 
 void lose(void)
 {
-	std::cout << "You lose." << endl;
+	std::cout << "You lose." << std::endl;
 	hp < 0;
 	mp = 20;
 	ehp = 20;
@@ -13,7 +13,7 @@ void lose(void)
 
 void win(void)
 {
-	cout << "You win." << endl;
+	std::cout << "You win." << std::endl;
 	hp = 20;
 	mp = 20;
 	ehp = 20;
@@ -24,28 +24,30 @@ int main()
 	int choice;
 	int move;
 	bool gameOn = true;
-	while (gameOn != false){
-		cout << "*******************************\n";
-		cout << " 1 - Start the game.\n";
-		cout << " 2 - Help.\n";
-		cout << " 3 - Exit.\n";
-		cout << " Enter your choice and press return: ";
 
-		cin >> choice;
+	std::cout << "*******************************\n";
+	std::cout << " 1 - Start the game.\n";
+	std::cout << " 2 - Help.\n";
+	std::cout << " 3 - Exit.\n";
+	std::cout << " Enter your choice and press return: ";
+
+	std::cin >> choice;
+
+	while (gameOn != false){
 
 		switch (choice)
 		{
 		case 1:
-			cout << "game start!\n";
+			std::cout << "game start!\n";
 		label:
-			cout << "ehp: " << ehp << std::endl << "hp: " << hp << std::endl << "mp: " << mp << std::endl << "(4) Attack" << std::endl << "(5) Magic Spell" << std::endl << "(6) Summon" << std::endl;
-			cin >> move;
+			std::cout << "ehp: " << ehp << std::endl << "hp: " << hp << std::endl << "mp: " << mp << std::endl << "(4) Attack" << std::endl << "(5) Magic Spell" << std::endl << "(6) Summon" << std::endl;
+			std::cin >> move;
 			system("cls");
-			cout << "Status:" << endl;
+			std::cout << "Status:" << std::endl;
 
 			if (move == 4)
 			{
-				cout << "You sliced the enemy with your sword." << endl;
+				std::cout << "You sliced the enemy with your sword." << std::endl;
 				ehp -= 1;
 				if (ehp < 0)
 				{
@@ -58,13 +60,13 @@ int main()
 					lose();
 					return 0;
 				}
-				cout << "The enemy cast a Magic Spell." << endl << endl;
+				std::cout << "The enemy cast a Magic Spell." << std::endl << std::endl;
 				hp -= 2;
 			}
 
 			if (move == 5)
 			{
-				cout << "You cast a devistating Magic Spell." << endl;
+				std::cout << "You cast a devistating Magic Spell." << std::endl;
 				ehp -= 2;
 				mp -= 1;
 				if (ehp < 0)
@@ -78,13 +80,13 @@ int main()
 					lose();
 					return 0;
 				}
-				cout << "The enemy used his sword." << endl << endl;
+				std::cout << "The enemy used his sword." << std::endl << std::endl;
 				hp -= 1;
 			}
 
 			if (move == 6)
 			{
-				cout << "You summoned a Ghost!" << endl;
+				std::cout << "You summoned a Ghost!" << std::endl;
 				ehp -= 10;
 				mp -= 15;
 				hp -= 1;
@@ -99,22 +101,22 @@ int main()
 					lose();
 					return 0;
 				}
-				cout << "The enemy used his sword." << endl << endl;
+				std::cout << "The enemy used his sword." << std::endl << std::endl;
 				hp -= 1;
 			}
 			break;
 		
 		case 2:
-			cout << "thats funny, you really think I would help you?\n";
+			std::cout << "thats funny, you really think I would help you?\n";
 			break;
 		case 3:
-			cout << "End of Program.\n";
+			std::cout << "End of Program.\n";
 			gameOn = false;
 			break;
 		default:
-			cout << "Not a Valid Choice. \n";
-			cout << "Choose again.\n";
-			cin >> choice;
+			std::cout << "Not a Valid Choice. \n";
+			std::cout << "Choose again.\n";
+			std::cin >> choice;
 			break;
 		}
 
