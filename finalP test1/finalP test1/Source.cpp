@@ -107,7 +107,7 @@ int main()
 			break;
 		
 		case 2:
-			std::cout << "thats funny, you really think I would help you?\n";
+			std::cout << "That's funny, you really think I would help you?" << std::endl;
 			break;
 		case 3:
 			std::cout << "End of Program.\n";
