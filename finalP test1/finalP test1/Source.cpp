@@ -1,22 +1,19 @@
 #include <iostream> 
 #include <stdlib.h> 
 #include <stdio.h>
-int hp = 20, mp = 20, ehp = 35;
+int hp = 20, notmp = 20, ehp = 35;
 
 void lose(void)
 {
 	std::cout << "You lose." << std::endl;
-	hp < 0;
-	mp = 20;
-	ehp = 20;
+	hp < 1;
+	notmp < 1;
 }
 
 void win(void)
 {
 	std::cout << "You win." << std::endl;
-	hp = 20;
-	mp = 20;
-	ehp = 20;
+	ehp < 1;
 }
 
 int main()
@@ -29,7 +26,7 @@ int main()
 	std::cout << " 1 - Start the game.\n";
 	std::cout << " 2 - Help.\n";
 	std::cout << " 3 - Exit.\n";
-	std::cout << " Enter your choice and press return: ";
+	std::cout << " Enter your choice and press enter: ";
 
 	std::cin >> choice;
 
@@ -40,7 +37,7 @@ int main()
 		case 1:
 			std::cout << "game start!\n";
 		label:
-			std::cout << "ehp: " << ehp << std::endl << "hp: " << hp << std::endl << "mp: " << mp << std::endl << "(4) Attack" << std::endl << "(5) Magic Spell" << std::endl << "(6) Summon" << std::endl;
+			std::cout << "enemy health points: " << ehp << std::endl << "health points: " << hp << std::endl << "magic points: " << notmp << std::endl << "(4) Attack" << std::endl << "(5) Magic Spell" << std::endl << "(6) Summon" << std::endl;
 			std::cin >> move;
 			system("cls");
 			std::cout << "Status:" << std::endl;
@@ -49,13 +46,13 @@ int main()
 			{
 				std::cout << "You sliced the enemy with your sword." << std::endl;
 				ehp -= 1;
-				if (ehp < 0)
+				if (ehp < 1)
 				{
 					win();
 					return 0;
 				}
 
-				if (hp < 0)
+				if (hp < 1, notmp < 1)
 				{
 					lose();
 					return 0;
@@ -67,15 +64,15 @@ int main()
 			if (move == 5)
 			{
 				std::cout << "You cast a devistating Magic Spell." << std::endl;
-				ehp -= 2;
-				mp -= 1;
-				if (ehp < 0)
+				ehp -= 3;
+				notmp -= 1;
+				if (ehp < 1)
 				{
 					win();
 					return 0;
 				}
 
-				if (hp < 0)
+				if (hp < 1, notmp < 1)
 				{
 					lose();
 					return 0;
@@ -88,15 +85,15 @@ int main()
 			{
 				std::cout << "You summoned a Ghost!" << std::endl;
 				ehp -= 10;
-				mp -= 15;
+				notmp -= 15;
 				hp -= 1;
-				if (ehp < 0)
+				if (ehp < 1)
 				{
 					win();
 					return 0;
 				}
 
-				if (hp < 0)
+				if (hp < 1, notmp < 1)
 				{
 					lose();
 					return 0;
@@ -107,7 +104,7 @@ int main()
 			break;
 		
 		case 2:
-			std::cout << "thats funny, you really think I would help you?\n";
+			std::cout << "You really thought I'd would help you, thats funny.\n" << std::endl;
 			break;
 		case 3:
 			std::cout << "End of Program.\n";
