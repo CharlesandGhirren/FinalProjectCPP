@@ -104,7 +104,11 @@ int main()
 			break;
 		
 		case 2:
+<<<<<<< HEAD
 			std::cout << "You really thought I'd would help you, thats funny.\n" << std::endl;
+=======
+			std::cout << "That's funny, you really think I would help you?" << std::endl;
+>>>>>>> origin/master
 			break;
 		case 3:
 			std::cout << "End of Program.\n";
