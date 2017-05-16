@@ -39,9 +39,9 @@ loop:
 	if (room == "look" || room == "Look" || room == "search" || room == "Search" || room == "Look around" || room == "look around")
 	{
 		std::cout << name << " is in the room along with four walls, a door, and a bed" << std::endl;
-		goto loop;
+		goto loop; 
 	}
-	if (room == "open" || room == "Open" || room == "Open door" || room == "open door")
+	if (room == "open" || room == "Open" || room == "Open door" || room == "open door" ||room == "door")
 	{
 
 		std::cout << "You walk towards the door, and as you grab the handle and turn a" << std::endl;
