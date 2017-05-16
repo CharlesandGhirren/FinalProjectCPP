@@ -47,5 +47,24 @@ loop:
 		std::cout << "You walk towards the door, and as you grab the handle and turn a" << std::endl;
 		std::cout << "clicking sound indicates that the door is locked.               " << std::endl;
 		goto loop;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 }
