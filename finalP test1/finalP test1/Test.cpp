@@ -47,38 +47,19 @@ loop:
 		std::cout << "You walk towards the door, and as you grab the handle and turn a" << std::endl;
 		std::cout << "clicking sound indicates that the door is locked.               " << std::endl;
 		goto loop;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	}
 	if (room == "Where am I?" || room == "where am i" || room == "what is this place" || room == "What is this place?")
 	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
+		std::cout << "The confines of your mind, trapped by the convictions that you set for " << std::endl;
+		std::cout << "yourself.  " << std::endl;
 		std::cout << " " << std::endl;
 		std::cout << " " << std::endl;
 		goto loop;
 	}
 	if (room == "How do I get out?" || room == "how do I get out" || room == "Get me out of here" || room == "get me out of here" || room == "Let me out" || room == "get me out")
 	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
+		std::cout << "You must find your own way out, perhaps it is not the room that you are " << std::endl;
+		std::cout << "escaping but you yourself.  " << std::endl;
 		std::cout << " " << std::endl;
 		std::cout << " " << std::endl;
 		goto loop;
@@ -101,7 +82,7 @@ loop:
 	}
 	if (room == "Where does this door lead?" || room == "where does this door lead")
 	{
-		std::cout << " " << std::endl;
+		std::cout << "Where else but to a whole new world?" << std::endl;
 		std::cout << " " << std::endl;
 		std::cout << " " << std::endl;
 		std::cout << " " << std::endl;
@@ -117,8 +98,8 @@ loop:
 	}
 	if (room == "Who am I?" || room == "who am i")
 	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
+		std::cout << "You are " << name << " or at least that's who you believe yourself to be, " << std::endl;
+		std::cout << "although in reality we are the ones that  " << std::endl;
 		std::cout << " " << std::endl;
 		std::cout << " " << std::endl;
 		goto loop;
