@@ -1,10 +1,6 @@
 #include <iostream>
 #include <string>
 
-#pragma comment(lib, "winmm.lib")
-#include "windows.h"
-#include "mmsystem.h"
-
 
 int main(int argc, char **argv)
 {
@@ -19,7 +15,7 @@ int main(int argc, char **argv)
 	std::cout << "You are nothing more than a single grain of sand on an endless beach nothing you";
 	std::cout << "do will ever amount to anything. Now I'm sure that you're expecting a use for   ";
 	std::cout << "this program and I will abide to your demands.                                     ";
-
+	
 loop:
 	std::cout << "You find yourself in a room" << std::endl;
 	std::cin >> room;
@@ -47,66 +43,9 @@ loop:
 	}
 	if (room == "open" || room == "Open" || room == "Open door" || room == "open door")
 	{
-		sndPlaySound("footsteps.wav", SND_SYNC);
 
 		std::cout << "You walk towards the door, and as you grab the handle and turn a" << std::endl;
 		std::cout << "clicking sound indicates that the door is locked.               " << std::endl;
 		goto loop;
 	}
-if (room == "Where am I?" || room == "where am i" || room == "what is this place" || room == "What is this place?")
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
-	}
-	if (room == "How do I get out?" || room == "how do I get out" || room == "Get me out of here" || room == "get me out of here" || room == "Let me out" || room == "get me out" )
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
-	}
-	if (room == "Why am I here?" || room == "why am i here" || room == "Why me?" || room == "why me")
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
-	}
-	if (room == "can you open the door" || room == "Can you open the door?")
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
-	}
-	if (room == "Where does this door lead?" || room == "where does this door lead")
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
-	}
-	if (room == "sleep in bed" || room == "Sleep in bed" || room == "Go to bed" || room == "go to bed" || room == "go to sleep" || room == "Go to sleep")
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
-	}
-	if (room == "Who am I?" || room == "who am i")
-	{
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		std::cout << " " << std::endl;
-		goto loop;
 }
-
