@@ -1,8 +1,12 @@
 #include <iostream>
 #include <string>
-#include <map>
 
-int main()
+#pragma comment(lib, "winmm.lib")
+#include "windows.h"
+#include "mmsystem.h"
+
+
+int main(int argc, char **argv)
 {
 	std::string name;
 	std::string room;
@@ -43,6 +47,8 @@ loop:
 	}
 	if (room == "open" || room == "Open" || room == "Open door" || room == "open door")
 	{
+		sndPlaySound("footsteps.wav", SND_SYNC);
+
 		std::cout << "You walk towards the door, and as you grab the handle and turn a" << std::endl;
 		std::cout << "clicking sound indicates that the door is locked.               " << std::endl;
 		goto loop;

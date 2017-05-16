@@ -81,10 +81,10 @@
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="resource.h" />
+    <ResourceCompile Include="finalP test1.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="finalP test1.rc" />
+    <Media Include="..\..\footsteps.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
