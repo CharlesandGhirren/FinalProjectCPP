@@ -83,9 +83,6 @@
   <ItemGroup>
     <ResourceCompile Include="finalP test1.rc" />
   </ItemGroup>
-  <ItemGroup>
-    <Media Include="..\..\footsteps.wav" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
