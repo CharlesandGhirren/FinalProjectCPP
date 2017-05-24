@@ -47,24 +47,60 @@ loop:
 		std::cout << "You walk towards the door, and as you grab the handle and turn a" << std::endl;
 		std::cout << "clicking sound indicates that the door is locked.               " << std::endl;
 		goto loop;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
+	if (room == "Where am I?" || room == "where am i" || room == "what is this place" || room == "What is this place?")
+	{
+		std::cout << "That information is not necessary to you at this moment. " << std::endl;
+		std::cout << "Although if you wish to further pursue that question, " << std::endl;
+		std::cout << "I'd recommend that find your way out. " << std::endl;
+		goto loop;
+	}
+	if (room == "How do I get out?" || room == "how do I get out" || room == "Get me out of here" || room == "get me out of here" || room == "Let me out" || room == "get me out")
+	{
+		std::cout << "I cannot help you I am here to observe and analyze how you behave. " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		goto loop;
+	}
+	if (room == "Why am I here?" || room == "why am i here" || room == "Why me?" || room == "why me")
+	{
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		goto loop;
+	}
+	if (room == "can you open the door" || room == "Can you open the door?")
+	{
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		goto loop;
+	}
+	if (room == "Where does this door lead?" || room == "where does this door lead")
+	{
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		goto loop;
+	}
+	if (room == "sleep in bed" || room == "Sleep in bed" || room == "Go to bed" || room == "go to bed" || room == "go to sleep" || room == "Go to sleep")
+	{
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		goto loop;
+	}
+	if (room == "Who am I?" || room == "who am i")
+	{
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		std::cout << " " << std::endl;
+		goto loop;
 	}
 }
